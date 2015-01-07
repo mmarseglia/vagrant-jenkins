@@ -1,7 +1,7 @@
 boxes:
   puppetlabs/centos-6.5-64-puppet: "puppetlabs/centos-6.5-64-puppet"
 nodes:
-  jenkins:
+  vjenkins:
     hostname: jenkins.vagrant.vm
     box: puppetlabs/centos-6.5-64-puppet
     memory: 1024
@@ -17,7 +17,7 @@ nodes:
     synced_folders:
       - host: .
         guest: /vagrant
-  node:
+  vnode:
     hostname: node.vagrant.vm
     box: puppetlabs/centos-6.5-64-puppet
     memory: 512
