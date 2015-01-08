@@ -15,7 +15,7 @@ cat > /etc/hosts <<EOH
 EOH
 
 # install git, java. required on both VMs
-sudo yum install git java-1.6.0-openjdk
+sudo yum install -y git java-1.6.0-openjdk
 
 # Bootstrap the master
 if [ "$1" == 'master' ]; then
